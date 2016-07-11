@@ -18,5 +18,7 @@ Scripts:
 
 `npm run clean` - will delete the dist folder
 
+Setup: run `npm install`
+
 Clone it and get started!
 

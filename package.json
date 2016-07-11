@@ -1,12 +1,13 @@
 {
-  "name": "vue-typescript-ts-sample",
+  "name": "vue-typescript-seed",
   "version": "1.0.0",
-  "description": "A sample app using vue-typescript",
+  "description": "A starter project for vue typescript using webpack and bootstrap",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base src/",
     "clean": "rm -rf dist",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "typings install"
   },
   "author": "Francis O'Brien",
   "license": "MIT",
