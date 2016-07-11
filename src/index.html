@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= webpackConfig.metadata.title %></title>
+
+  <meta name="description" content="<%= webpackConfig.metadata.title %>">
+
+  <!-- base url -->
+  <base href="<%= webpackConfig.metadata.baseUrl %>">
+
+
+</head>
+
+<body>
+
+  <div id="app-main">
+    <navbar :inverted="false"></navbar>
+    <router-view>loading...</router-view>
+  </div>
+
+  <% if (webpackConfig.metadata.isDevServer) { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+
+
+</body>
+</html>
