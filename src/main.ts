@@ -26,10 +26,10 @@ var router = new VueRouter();
 
 router.map({
   '/' : {
-      component: new HomeComponent() //Components used by vue-router must be called with new
+      component: HomeComponent
   },
   '/about' : {
-      component: new AboutComponent()
+      component: AboutComponent
   }
 });
 

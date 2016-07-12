@@ -1,5 +1,5 @@
 # vue-typescript-seed
-A starter project for vue typescript using webpack and bootstrap
+A starter project for [vue-typescript](https://github.com/itsFrank/vue-typescript) using webpack and bootstrap
 
 This seed repo comes with all you need to start building a vuejs project using typescript.
 

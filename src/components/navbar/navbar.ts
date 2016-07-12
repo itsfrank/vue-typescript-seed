@@ -16,8 +16,8 @@ class Link {
 })
 export class Navbar extends Vue {
 
-    @Prop({default: true})
-    inverted:boolean;
+    @Prop
+    inverted:boolean = true; //default value
 
     links:Link[] = [
         new Link('Home', '/'),
@@ -26,6 +26,6 @@ export class Navbar extends Vue {
 
     @Watch('$route.path')
     pathChanged(){
-        console.log('Changed current pathe to: ' + this.$route.path);
+        console.log('Changed current path to: ' + this.$route.path);
     }
 } 
