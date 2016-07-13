@@ -19,6 +19,9 @@ export class Navbar extends Vue {
     @Prop
     inverted:boolean = true; //default value
 
+    @Prop
+    object:{default:string} = {default: 'Default object property!'}; //objects as default values don't need to be wrapped into functions
+
     links:Link[] = [
         new Link('Home', '/'),
         new Link('About', '/about')
@@ -27,5 +30,9 @@ export class Navbar extends Vue {
     @Watch('$route.path')
     pathChanged(){
         console.log('Changed current path to: ' + this.$route.path);
+    }
+
+    ready(){
+        console.log(this.object.default);
     }
 } 
